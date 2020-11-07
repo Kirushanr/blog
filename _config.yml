@@ -23,11 +23,16 @@ url: "https://blog.kirushan.com" # the base hostname & protocol for your site, e
 twitter_username: kirushanr
 github_username:  kirushanr
 author: Kirushan Rasendran
-
+description: > # this means to ignore newlines until "show_excerpts:"
+  Kirushan Rasendran, programmer, cyber security enthusiast and a bibliophile.
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+minima:
+  skin: dark
+  date_format: "%b %-d, %Y"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
