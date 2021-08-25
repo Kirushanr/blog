@@ -23,6 +23,7 @@ search: true
 logo: "/assets/images/88x88.png"
 
 
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
@@ -88,6 +89,7 @@ defaults:
       read_time: true
       comments: true
       share: true
+      show_date: true
       related: true
   # _pages
   - scope:
