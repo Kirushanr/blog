@@ -6,17 +6,15 @@ category: phishing
 ![Phishing-art-work](https://user-images.githubusercontent.com/3458013/130774845-0bcf942c-c44d-4080-bf52-ba39aa71a25b.png)
 
 
+# Synopsis
+
+In this article, I revisit a DIY approach I took to take down a scammer's infrastructure during the last holiday season. <br />
 
 
 # Stop and Think 
 If you have **lost money or data to a phishing scam**, please stop reading this article and contact law enforcement or get help. 
 * Australia:  https://www.scamwatch.gov.au/get-help/where-to-get-help
 * USA: https://www.usa.gov/stop-scams-frauds
-
-# Synopsis
-
-In this article, I revisit a DIY approach I took to take down a scammer's infrastructure during the last holiday season. <br />
-
 
 
 # The Link  
