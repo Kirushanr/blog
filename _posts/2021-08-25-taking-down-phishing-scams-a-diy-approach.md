@@ -1,7 +1,12 @@
 ---
-category: phishing
 title: 'Taking down phishing scams : a DIY approach'
+category: phishing
 ---
+
+![Phishing-art-work](https://user-images.githubusercontent.com/3458013/130774845-0bcf942c-c44d-4080-bf52-ba39aa71a25b.png)
+
+
+
 
 # Stop and Think 
 If you have **lost money or data to a phishing scam**, please stop reading this article and contact law enforcement or get help. 
