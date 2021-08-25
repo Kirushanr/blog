@@ -42,7 +42,7 @@ As web users, we know that websites may behave differently based on the device/b
 
 
 
-The above theory prompted me to try something with URLSCAN.io. I switched and tried multiple User-Agents [4] with different Operating systems.  But I finally got lucky with the mobile user agent iOS Safari,  a nicely designed web app was prompting me to enter my email to claim an iPhone.
+The above theory prompted me to try something with URLSCAN.io. I switched and tried multiple User-Agents with different Operating systems.  But I finally got lucky with the mobile user agent iOS Safari,  a nicely designed web app was prompting me to enter my email to claim an iPhone.
 
 ![iPhone scam page ](https://user-images.githubusercontent.com/3458013/130765737-a6e923ee-32e1-40ff-83b2-8f0a730e027c.png)
 
@@ -80,7 +80,7 @@ The key to taking down phishing infrastructure is to reporting it to hosting pro
 
 
 
--  Since this scam targeted users primarily based in Australia, I  also sent the report to ScamWatch Australia
+-  Since this scam targeted users primarily based in Australia, I  also sent the report to [ScamWatch Australia](https://www.scamwatch.gov.au/report-a-scam).
 
 
 <br />
