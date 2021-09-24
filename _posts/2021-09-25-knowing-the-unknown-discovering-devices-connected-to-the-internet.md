@@ -4,7 +4,8 @@ category: network
 ---
 
 ![Discovering devices cover](https://user-images.githubusercontent.com/3458013/134617744-0f192a75-23b4-4be6-a8c9-0b37d47f2e77.png)
-# Introduction 
+
+#  Introduction 
 
 The present-day internet sees everything from smart toothbrushes, unsecured databases, CCTVs  and dirty dishes soaking in a [smart kitchen](https://mashable.com/article/iot-voice-control-delta-faucet-sink)  right now . 
 
