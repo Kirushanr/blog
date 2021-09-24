@@ -15,9 +15,9 @@ This article describes a few tools we can use to identify and monitor our device
 
 > If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained, you will also suffer a defeat. If you know neither the enemy nor yourself, you will succumb in every battle. - [Sun Tzu](https://suntzusaid.com/book/3/18)
 
-# Passive reconnaissance (Recon)
+# Passive reconnaissance 
 
-The first phase of hacking is reconnaissance, where the attacker research and gathers information about a target.  Passive reconnaissance collects information about a target without raising alarms; this phase does not directly interact with a target or its network assets. 
+The first phase of hacking is reconnaissance (recon), where the attacker research and gathers information about a target.  Passive reconnaissance collects information about a target without raising alarms; this phase does not directly interact with a target or its network assets. 
 
 There are SaaS (Software As A Service Platforms), which provide information gathered from actively scanning the internet (Active Reconnaissance). They are passive recon tools. 
 
