@@ -4,7 +4,7 @@ category: devsecops
 show_excerpts: false
 ---
 
-![Seizing Production Cover](https://user-images.githubusercontent.com/3458013/134617744-0f192a75-23b4-4be6-a8c9-0b37d47f2e77.png)
+![Seizing Production Cover](https://gist.github.com/user-attachments/assets/e708621b-ca16-48c7-85cb-ca98776ce18e)
 
 # Synopsis
 We are going to look at a very simple CI/CD insecurity, that allows anyone who have write privileges  to a deployment pipeline in your organisation, to create chaos in a production environment. We will cover, how this can be accomplished in Azure Devops, GitHub and Bitbucket and how we can mitigate this in simple steps.
