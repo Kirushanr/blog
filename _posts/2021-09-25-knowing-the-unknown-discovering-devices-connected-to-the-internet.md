@@ -5,7 +5,7 @@ category: network
 
 ![Discovering devices cover](https://user-images.githubusercontent.com/3458013/134617744-0f192a75-23b4-4be6-a8c9-0b37d47f2e77.png)
 
-#  Introduction 
+##  Introduction 
 
 The present-day internet sees everything from smart toothbrushes, unsecured databases, CCTVs  and dirty dishes soaking in a [smart kitchen](https://mashable.com/article/iot-voice-control-delta-faucet-sink)  right now . 
 
@@ -15,14 +15,14 @@ This article describes a few tools we can use to identify and monitor our device
 
 > If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained, you will also suffer a defeat. If you know neither the enemy nor yourself, you will succumb in every battle. - [Sun Tzu](https://suntzusaid.com/book/3/18)
 
-# Passive reconnaissance 
+## Passive reconnaissance 
 
 The first phase of hacking is reconnaissance (recon), where the attacker research and gathers information about a target.  Passive reconnaissance collects information about a target without raising alarms; this phase does not directly interact with a target or its network assets. 
 
 There are SaaS (Software As A Service Platforms), which provide information gathered from actively scanning the internet (Active Reconnaissance). They are passive recon tools. 
 
 
-## Shodan
+### Shodan
 
 [Shodan](https://www.shodan.io/) is the world's first search engine for Internet-connected devices and my favourite tool. 
 
@@ -38,7 +38,7 @@ In addition, they do provide network monitoring features where if something pops
 Shodan pro subscriptions cost 49 $ a month, but they offer 5$/per month pro shodan accounts during the Black Friday sale. 
 If you have a .edu email, they offer the pro account features for free. 
 
-## Greynoise 
+### Greynoise 
 
 Greynoise comes in handy if we want to identify any compromised devices within a specified IP address range. 
 
@@ -48,9 +48,9 @@ Greynoise does provide a free community subscription, allowing users to search I
 
 ![Example Greynoise insights about an infected machine ](https://user-images.githubusercontent.com/3458013/134498543-a6a6cbfd-9c0f-4c87-b6c2-9dc1547d168f.png)
 
-# Active Recon
+## Active Recon
 
-## Nmap 
+### Nmap 
 
 Nmap is the go-to opensource tool for network discovery and if you want to host your network scanning service. Nmap  comes in many flavours. 
 
@@ -64,7 +64,7 @@ Nmap can be used to [find open-ports,  OS fingerprinting](https://nmap.org/book/
 If you need an excellent place to start on continous network scanning Jeremy Gamblin has written a [simple guide](https://jerrygamblin.com/2016/11/05/continuous-network-monitoring-with-slack-alerting/) on that with alerting.
 
 
-# Conclusion 
+## Conclusion 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Attackers put in the time to know the network and the devices better than the defenders. That’s how they win.</p>&mdash; Rob Joyce (@NSA_CSDirector) <a href="https://twitter.com/NSA_CSDirector/status/1437233496351723523?ref_src=twsrc%5Etfw">September 13, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
