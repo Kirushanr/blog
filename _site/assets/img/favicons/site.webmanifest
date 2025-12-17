@@ -1,9 +1,9 @@
 
 
 {
-  "name": "Boring Security Dev",
-  "short_name": "Boring Security Dev",
-  "description": "My thoughts on Cyber security and beyond.",
+  "name": "Boring Security",
+  "short_name": "Boring Security",
+  "description": "My thoughts on cyber security and beyond.",
   "icons": [
     {
       "src": "/assets/img/favicons/web-app-manifest-192x192.png",

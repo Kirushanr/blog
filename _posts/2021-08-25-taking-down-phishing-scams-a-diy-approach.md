@@ -6,18 +6,18 @@ category: phishing
 ![Phishing-art-work](https://user-images.githubusercontent.com/3458013/130774845-0bcf942c-c44d-4080-bf52-ba39aa71a25b.png)
 
 
-# Synopsis
+## Synopsis
 
 In this article, I revisit a DIY approach I took to take down a scammer's infrastructure during the last holiday season. <br />
 
 
-# Stop and Think 
+## Stop and Think 
 If you have **lost money or data to a phishing scam**, please stop reading this article and contact law enforcement or get help. 
 * Australia:  https://www.scamwatch.gov.au/get-help/where-to-get-help
 * USA: https://www.usa.gov/stop-scams-frauds
 
 
-# The Link  
+## The Link  
 
 You may have received one or more links from scammers with the description of "You have won an iPhone" or "A parcel is waiting for clearance" click here to claim it. Once you click the link, the link may direct you to a website, which could deceive you into entering PII ([Personally Identifiable Information](https://www.oaic.gov.au/privacy/guidance-and-advice/what-is-personal-information/)). 
 
@@ -25,7 +25,7 @@ This attack is identified as phishing but based on the threat vector; it can be 
 
 
 
-# Analysis
+## Analysis
 
 The first step of the analysis begins with the link I received from the scammer. The link is the most important clue, as it may reveal the phishing infrastructures behind the scam. 
 
@@ -62,7 +62,7 @@ The scammers have hosted the primary user interface, the data collection user in
 
 
 
-# Reporting
+## Reporting
 
 The key to taking down phishing infrastructure is to reporting it to hosting providers. In addition, reporting it to browser makers and antivirus companies could mark the domain as malicious/suspicious.  The below image shows an example of URLSCAN.io results. 
 
@@ -87,7 +87,7 @@ The key to taking down phishing infrastructure is to reporting it to hosting pro
 <br />
 
 
-# The waiting game 
+## The waiting game 
 
 Hosting providers get tons of abuse reports a day. The average turnaround time could be days, weeks,  or may be months.
 
@@ -108,7 +108,8 @@ Hosting providers get tons of abuse reports a day. The average turnaround time c
 
 
 <br />
-# Conclusion 
+
+## Conclusion 
 
 Taking down phishing scams are similar to the whack a mole game; there will be another  when you take down one. However, reporting them is the key to prevent others from falling into the scam. 
 

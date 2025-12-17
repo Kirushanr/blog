@@ -2,9 +2,9 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
-  <title>Boring Security Dev</title>
-  <subtitle>My thoughts on Cyber security and beyond.</subtitle>
-  <updated>2025-12-18T09:12:50+11:00</updated>
+  <title>Boring Security</title>
+  <subtitle>My thoughts on cyber security and beyond.</subtitle>
+  <updated>2025-12-18T09:35:22+11:00</updated>
   <author>
     <name>Kirushan Rasendran</name>
     <uri>http://localhost:4000/</uri>
@@ -38,7 +38,7 @@
     
   
 
-  <summary>Synopsis We are going to look at a very simple CI/CD insecurity, that allows anyone who have write privileges  to a deployment pipeline in your organisation, to create chaos in a production environment. We will cover, how this can be accomplished in Azure Devops, GitHub and Bitbucket and how we can mitigate this in simple steps.  CI/CD for layman Most people use the  word  CI/CD as a colloquial...</summary>
+  <summary>Synopsis  We are going to look at a very simple CI/CD insecurity, that allows anyone who have write privileges  to a deployment pipeline in your organisation, to create chaos in a production environment. We will cover, how this can be accomplished in Azure Devops, GitHub and Bitbucket and how we can mitigate this in simple steps.  CI/CD for layman  Most people use the  word  CI/CD as a colloqui...</summary>
 
   </entry>
 
