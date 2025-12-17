@@ -2,9 +2,9 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
-  <title>Boring Security</title>
-  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-12-17T09:26:49+11:00</updated>
+  <title>Boring Security Dev</title>
+  <subtitle>My thoughts on Cyber security and beyond.</subtitle>
+  <updated>2025-12-18T09:12:50+11:00</updated>
   <author>
     <name>Kirushan Rasendran</name>
     <uri>http://localhost:4000/</uri>

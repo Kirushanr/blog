@@ -1,9 +1,9 @@
 
 
 {
-  "name": "Boring Security",
-  "short_name": "Boring Security",
-  "description": "A minimal, responsive and feature-rich Jekyll theme for technical writing.",
+  "name": "Boring Security Dev",
+  "short_name": "Boring Security Dev",
+  "description": "My thoughts on Cyber security and beyond.",
   "icons": [
     {
       "src": "/assets/img/favicons/web-app-manifest-192x192.png",
