@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Boring Security</title>
   <subtitle>My thoughts on cyber security and beyond.</subtitle>
-  <updated>2025-12-18T09:35:22+11:00</updated>
+  <updated>2025-12-18T10:03:32+11:00</updated>
   <author>
     <name>Kirushan Rasendran</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/seizing-production/" rel="alternate" type="text/html" title="Seizing production: a deployment chaos" />
     <published>2025-07-28T00:00:00+10:00</published>
   
-    <updated>2025-07-27T21:22:04+10:00</updated>
+    <updated>2025-12-18T09:36:14+11:00</updated>
   
     <id>http://localhost:4000/posts/seizing-production/</id>
     <content type="text/html" src="http://localhost:4000/posts/seizing-production/" />
@@ -48,7 +48,7 @@
     <link href="http://localhost:4000/posts/knowing-the-unknown-discovering-devices-connected-to-the-internet/" rel="alternate" type="text/html" title="Knowing the unknown:  discovering devices connected to the internet" />
     <published>2021-09-25T00:00:00+10:00</published>
   
-    <updated>2021-09-25T08:53:01+10:00</updated>
+    <updated>2025-12-18T09:36:14+11:00</updated>
   
     <id>http://localhost:4000/posts/knowing-the-unknown-discovering-devices-connected-to-the-internet/</id>
     <content type="text/html" src="http://localhost:4000/posts/knowing-the-unknown-discovering-devices-connected-to-the-internet/" />
@@ -72,7 +72,7 @@
     <link href="http://localhost:4000/posts/taking-down-phishing-scams-a-diy-approach/" rel="alternate" type="text/html" title="Taking down phishing scams : a DIY approach" />
     <published>2021-08-25T00:00:00+10:00</published>
   
-    <updated>2021-08-25T22:04:23+10:00</updated>
+    <updated>2025-12-18T09:36:14+11:00</updated>
   
     <id>http://localhost:4000/posts/taking-down-phishing-scams-a-diy-approach/</id>
     <content type="text/html" src="http://localhost:4000/posts/taking-down-phishing-scams-a-diy-approach/" />

@@ -1,3 +1,0 @@
-.is-collapsed {
-  max-height: none !important;
-}
