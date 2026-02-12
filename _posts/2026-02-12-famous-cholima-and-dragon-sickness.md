@@ -208,9 +208,9 @@ This is quite fun one, and very known behaviour if you have hunted phishing page
 
 ![JWT Decoded](https://gist.github.com/user-attachments/assets/af658c2d-8b40-48ce-937b-c0bb26fc75ff)
 
-```
+
 I mentioned the name Juliette Clarke in the title because some of the malicious tasks.json files reference this name with the title of Lead Engineer. Of course, it is fiction!. But they do this to make it look more legitimate.
-```
+
 
 ## Detection and Finale
 
