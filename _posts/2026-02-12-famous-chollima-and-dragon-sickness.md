@@ -123,7 +123,7 @@ As we saw earlier in the lifecycle
 4) Final payload executes on user device
 
 In ***step one*** attackers are using Trusted Hosting providers such as GitHub, Vercel, OnRender because
-most organisations may choose to allowlist them in their networks to avoid the constant requests for change and to avoid the backlog of IT tickets filled with requests to allowlisting domains. In addition, most EDRs will not block these platforms for same reasons (Unless they are explictly flagged as malicious). Abuse of hosting platforms is not a new thing, it has been happening for a very long time. 
+most organisations may choose to allowlist them in their networks to avoid the constant requests for change and to avoid the backlog of IT tickets filled with requests to allowlist domains. In addition, most EDRs will not block these platforms for same reasons (Unless they are explictly flagged as malicious). Abuse of hosting platforms is not a new thing, it has been happening for a very long time. 
 
 ***Step 2-4*** further payloads are fetched from remote resources, and POST requests are also made to attacker controlled infrastructure.
 Final goal of Step 4 exfilteration of credentials from the infected devices. 
@@ -200,7 +200,7 @@ Also, if an untrained user is executing it, they may not understand what the scr
 4) ***Using Trusted hosting platforms to bypass Web Filtering***
 
 5) ***User agent detection to stop abuse teams investigating the initial payload sources***: 
-This is quite fun one, and very known behaviour if you have hunted phishing pages. This is a primary defense against online scanners such as Virustotal, if you scan the initial URL, it will return a benign response that is not going to be flagged. Furthermore, it is also a technique to bypass platforms that automate absuse verification, where if they are scanning the affected URL, their scanner may also fail to notice it. Unless, a human explicitly reads the report and pokes around the URL to confirm that it is indeed malicious.
+This is quite fun one, and very known behaviour if you have hunted phishing pages. This is a primary defense against online scanners such as Virustotal, if you scan the initial URL, it will return a benign response that is not going to be flagged. Furthermore, it is also a technique to bypass platforms that automate abuse verification, where if they are scanning the affected URL, their scanner may also fail to notice it. Unless, a human explicitly reads the report and pokes around the URL to confirm that it is indeed malicious.
 
 6) ***JWT Use***: This is a new technique I have not observed before. In this particular instance, the JWT is not protected by an algorithm; it is simply a base64-encoded payload with expiration time and a step count (not sure what that means). I was able to bypass this by running the payload in my sandbox environment and observing the entire behavior. I suspect this technique is also has the same reasons as using user agent detection.
 
