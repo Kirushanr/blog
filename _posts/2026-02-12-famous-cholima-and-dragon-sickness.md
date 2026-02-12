@@ -219,7 +219,7 @@ I want to suggest the following approaches for detection and prevention:
 1) Developer awareness:
 Please make sure your developers are aware that these threats exist. Trusting public repositories using Visual Studio Code is a really bad idea. 
 So always encourage them to inspect the code in ReadOnly mode, before trusting the workspace. Specially, the tasks.json file and language specific execution definitions (e.g. package.json files).
-** As of this writing Microsoft made changes to the Trust Workspace Dialog see the (GitHub issue)[https://github.com/microsoft/vscode/issues/287073].
+At the time of this writing Microsoft made changes to the Trust Workspace Dialog see the [GitHub issue](https://github.com/microsoft/vscode/issues/287073).
 
 2) Using CanaryTokens for Detection :
 This is my favorite method, if you do not have a large dedicated detection engineering team or SOC (even if you have one).
