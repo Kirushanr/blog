@@ -61,7 +61,7 @@ DPRK is leveraging current global economic conditions to their advantage. This i
 ## GitHub & Me 
 
 
-On Tuesday, 27th January 2026, I read another article published on OpenSourceMalware blog titled "[Small Open-Source Maintainers Targeted by VS Code Tasks Malware](https://opensourcemalware.com/blog/oss-maintainters-vscode-tasks-compromised)".
+On Tuesday, 27th January 2026, I read another article published on OpenSourceMalware blog titled [ Small Open-Source Maintainers Targeted by VS Code Tasks Malware ](https://opensourcemalware.com/blog/oss-maintainters-vscode-tasks-compromised).
 After reading this, I thought I could look for these malicious patterns in GitHub. Then I remembered that couple of years back, GitHub did improve it's code [search](https://github.com/search), allowing you to use custom filters to search and identify certain code patterns. (Also very useful if you want to identify insecure code patterns across all public repositories, if you are into vulnerability research).
 
 So I started with a simple pattern that looks for code that is located in .vscode/tasks.json and has curl.
@@ -226,7 +226,7 @@ This is my favorite method, if you do not have a large dedicated detection engin
 CanaryTokens are best option for detecting intrustions, that involves credentials harvesting. Please take a look at [Thinkist Canary Tokens project](https://canarytokens.org/nest/) (It is free, also I am not affiliated with this vendor). For example, you can create AWS Keys as canary tokens and export it to your environment variables and patiently wait for them to trip on your wire!.
 
 3) ***Eliminate the usage of long-lived credentials***: I cannot stress this enough.
-Please do not create privileged long-lived credentials in your Cloud (e.g. AWS Access Keys) or GitHub PAT. Always use ephemeral credentials where possible. This gives attackers a small time window to act.
+Please do not create privileged long-lived credentials that gives access to your Cloud environment (e.g. AWS Access Keys) or GitHub PAT. Always use ephemeral credentials where possible. This gives attackers a small time window to act.
 
 4) ***Monitor your environment for anomalies*** : Most stolen credentials especially cookies, secrets should trigger alerts when new sessions/actions are created or performed, if you have established a baseline behaviour of your environment. These alerts are biggest giveaway that someone in your organistion is compromised.
 Also, I want to highlight something here: users can access your organization's SaaS platforms on their personal devices, especially if BYOD is allowed (mostly startups fall into this category). If you are relying solely on corporate device detection techniques, you will struggle to detect these threats.
