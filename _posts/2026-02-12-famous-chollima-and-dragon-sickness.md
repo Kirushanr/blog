@@ -12,7 +12,7 @@ category: threat intelligence
 
 ## Disclaimer 
 
-I am not a malware researcher or a reverse engineer. I poke at things when I get bored (Which is pretty often, now more often!).
+I am not a malware researcher or a reverse engineer. I poke at things when I get bored (which is pretty often, now more often!).
 The samples and behavior of malware that is discussed here are my understanding, expert opinion may be needed. I relied on public information, intelligence reports, IOCs, and observing malware execution in sandbox environments to write this analysis.
 
 ## Job Hugging, Economy and DPRK enters the hiring market 
@@ -24,18 +24,18 @@ There are three patterns (I left the fourth one out, guess it !) that you can ob
  - Prolonged unemployment 
  - Increasing cost of living
  
- Everyone is clutching their pearls !,  especially in our industry because allegedly AI is coming for our jobs(I refer you to Corey Doctorow's [masterpiece](https://www.theguardian.com/us-news/ng-interactive/2026/jan/18/tech-ai-bubble-burst-reverse-centaur)). This domino effect has created a new opportunity for DPRK also known as Democratic Peoples Republic of Korea, a debt-stricken nation with economic sanctions and they are known for getting around this by committing [cybercrime](https://msmt.info/Publications/detail/MSMT%20Report/4221).
+ Everyone is clutching their pearls!,  especially in our industry because allegedly AI is coming for our jobs(I refer you to Corey Doctorow's [masterpiece](https://www.theguardian.com/us-news/ng-interactive/2026/jan/18/tech-ai-bubble-burst-reverse-centaur)). This domino effect has created a new opportunity for DPRK also known as Democratic People's Republic of Korea, a debt-stricken nation with economic sanctions and that is known for getting around this by committing [cybercrime](https://msmt.info/Publications/detail/MSMT%20Report/4221).
 
 North Koreans took this opportunity to target the current job market, especially the IT sector employees who are "Job hugging" or affected by layoffs.
 This is dubbed as contagious interview, where the threat actor is luring these employees into taking fake interview assessments that are laced with malware.
 
-The main motivation behind this appears to be targeting crypto-currency wallets, however after analyzing the payload it may also include harvesting credentials that are commonly available on developer workstations. These credentials may be used for further intrusions or pivot to other environments targeted individuals may have access to.
+The main motivation behind this appears to be targeting cryptocurrency wallets, however after analyzing the payload it may also include harvesting credentials that are commonly available on developer workstations. These credentials may be used for further intrusions or pivot to other environments targeted individuals may have access to.
 
 
 ## Contagious Interview & Visual Studio Code : A Better Love Story than Twilight
 
 The term contagious interview is coined by [Unit42 Research Team](https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/). 
-In the initial Contagious interview campaign highlights that the threat actors were posing as interviewers and directing people to install malicious NPM packages. But post [shai-hulud](https://unit42.paloaltonetworks.com/npm-supply-chain-attack/), we have lots of eyes on  NPM and other package ecosystem. So spreading malware via this method seem less ROI (Return on Investment) compared to previous years because it can get reported or picked up by a commercial tool, that flags the installation or removed by the package managers.
+In the initial Contagious interview campaign highlights that the threat actors were posing as interviewers and directing people to install malicious NPM packages. But post [shai-hulud](https://unit42.paloaltonetworks.com/npm-supply-chain-attack/), we have lots of eyes on  NPM and other package ecosystem. So spreading malware via this method seems less ROI (Return on Investment) compared to previous years because it can get reported or picked up by a commercial tool, that flags the installation or removed by the package managers.
 
 But we imagine the following scenario where :
  Threat actors at a roundtable, and they are thinking "what can we do next ... ?", they understand the need to pivot. They may have read the Microsoft article published on May 2025 titled [Celebrating 50 Million Developers: The Journey of Visual Studio and Visual Studio Code](https://developer.microsoft.com/blog/celebrating-50-million-developers-the-journey-of-visual-studio-and-visual-studio-code). So the Chief at [Chollima](https://www.crowdstrike.com/adversaries/famous-chollima/) (an adversary associated with DPRK) suggests: "Let's target 50 million developers, shall we?" Kim approves! 
@@ -52,7 +52,7 @@ The only thing standing between them and malware is this blue prompt shown in th
 
 ![Trust Workspace Prompt shown by VSCode](https://gist.github.com/user-attachments/assets/28f192a4-9b30-4d84-9a5c-bb8fcef15403)
 
-Oscar Wilde packs a punch for this exact situation 
+Oscar Wilde packs a punch for this exact situation:
 > Whenever a man does a thoroughly stupid thing, it is always from the noblest motives.
 
 DPRK is leveraging current global economic conditions to their advantage. This is  important because threat actors always improve their [tactics and techniques](https://attack.mitre.org/groups/G1052/) based on what is happening around us.
@@ -62,7 +62,7 @@ DPRK is leveraging current global economic conditions to their advantage. This i
 
 
 On Tuesday, 27th January 2026, I read another article published on OpenSourceMalware blog titled [ Small Open-Source Maintainers Targeted by VS Code Tasks Malware ](https://opensourcemalware.com/blog/oss-maintainters-vscode-tasks-compromised).
-After reading this, I thought I could look for these malicious patterns in GitHub. Then I remembered that couple of years back, GitHub did improve it's code [search](https://github.com/search), allowing you to use custom filters to search and identify certain code patterns. (Also very useful if you want to identify insecure code patterns across all public repositories, if you are into vulnerability research).
+After reading this, I thought I could look for these malicious patterns in GitHub. Then I remembered that a couple of years back, GitHub did improve its code [search](https://github.com/search), allowing you to use custom filters to search and identify certain code patterns. (Also very useful if you want to identify insecure code patterns across all public repositories, if you are into vulnerability research).
 
 So I started with a simple pattern that looks for code that is located in .vscode/tasks.json and has curl.
 
@@ -70,7 +70,7 @@ So I started with a simple pattern that looks for code that is located in .vscod
 path : ./vscode/tasks.json "curl"
 ```
 
-The last part is common, where a malicious script is fetched using curl from a hosting platform then piped (Pipe operator) to shell as input.
+The last part is common, where a malicious script is fetched using curl from a hosting platform then piped (pipe operator) to shell as input.
 The first iteration returned a lot of results, including users making legitimate requests to localhost and 127.0.0.1. 
 
 On my second iteration, I excluded localhost from my search. Then I found the malicious patterns (GitHub search and its indexing methods are a very [entertaining read](https://github.blog/engineering/architecture-optimization/the-technology-behind-githubs-new-code-search/)).
@@ -89,7 +89,7 @@ In the images shown below, attackers have removed their payload from tasks.json.
 
 
 ***After*** 
-![Attacker removing the payloads from tasks.json and hosting it part of the code](https://gist.github.com/user-attachments/assets/f62d4e9e-5c21-48a2-83b8-f9de4ffdc0cb)
+![Attacker removing the payloads from tasks.json and hosting it as part of the code](https://gist.github.com/user-attachments/assets/f62d4e9e-5c21-48a2-83b8-f9de4ffdc0cb)
 
 
 This small finding later turned into a small hobby project, where I built a small python script ( AI assisted coding). 
@@ -123,7 +123,7 @@ As we saw earlier in the lifecycle
 4) Final payload executes on user device
 
 In ***step one*** attackers are using Trusted Hosting providers such as GitHub, Vercel, OnRender because
-most organisations may choose to allowlist them in their networks to avoid the constant requests for change and to avoid the backlog of IT tickets filled with requests to allowlisting domains. In addition, most EDRs will not block these platforms for same reasons (Unless they are explictly flagged as malicious). Abuse of hosting platforms is not a new thing, it has been happening for a very long time. 
+most organisations may choose to allowlist them in their networks to avoid the constant requests for change and to avoid the backlog of IT tickets filled with requests to allowlist domains. In addition, most EDRs will not block these platforms for same reasons (Unless they are explictly flagged as malicious). Abuse of hosting platforms is not a new thing, it has been happening for a very long time. 
 
 ***Step 2-4*** further payloads are fetched from remote resources, and POST requests are also made to attacker controlled infrastructure.
 Final goal of Step 4 exfilteration of credentials from the infected devices. 
@@ -151,9 +151,9 @@ For example: test-9 flag leveraged [Etherhiding](https://cloud.google.com/blog/t
 ![Environment variables are sent as POST](https://gist.github.com/user-attachments/assets/46280962-31a1-49c3-a2ea-5de2176ea9c5)
 
 The final JS payload shown in the image above executes on the user device, sends a POST request to attacker controlled API endpoint with a body.
-The body of the POST request contains [process.env](https://nodejs.org/en/learn/command-line/how-to-read-environment-variables-from-nodejs). In this particular instance if you have secrets (e.g. GITHUB PAT, AWS Keys, Azure Secrets) configured  as environment variables in your bash/zsh shell, It will be harvested by the attacker. I also wanted to note that, if the user device does not have NodeJS runtime environment installed, it is installed prior to the execution of the final payload!. 
+The body of the POST request contains [process.env](https://nodejs.org/en/learn/command-line/how-to-read-environment-variables-from-nodejs). In this particular instance If you have secrets (e.g. GITHUB PAT, AWS Keys, Azure Secrets) configured  as environment variables in your bash/zsh shell, It will be harvested by the attacker. I also wanted to note that, if the user device does not have NodeJS runtime environment installed, it is installed prior to the execution of the final payload!. 
 
-So if you wonder why secrets are in environment variables, I direct you to [12 Factors App](https://12factor.net/config), and also a very known example of configuring [AWS CLI](https://docs.aws.amazon.com/cli/v1/userguide/cli-configure-envvars.html). When developers export the secrets, as part of their existing shell to save some time, the secrets sits there waiting to be stolen.  
+So if you wonder why secrets are in environment variables, I direct you to [12 Factors App](https://12factor.net/config), and also a very known example of configuring [AWS CLI](https://docs.aws.amazon.com/cli/v1/userguide/cli-configure-envvars.html). When developers export the secrets, as part of their existing shell to save some time, the secrets sit there waiting to be stolen.  
 
 
 #### BeaverTail 
@@ -175,8 +175,8 @@ There were two addresses I was able to identify in the deobfuscated JS file,
 0x3f0e5781d0855fb460661ac63257376db1941b2bb522499e4757ecb3ebd5dce3
 ```
 
-Both of theses addresses are known as part of Etherhiding techniques used by DPRK.
-If you interested in read more about indepth analysis of how this works, I recommend you reading this [article](https://ransom-isac.org/blog/cross-chain-txdatahiding-crypto-heist/) by RANSOM ISAC.
+Both of these addresses are known as part of Etherhiding techniques used by DPRK.
+If you interested in read more about in-depth analysis of how this works, I recommend you reading this [article](https://ransom-isac.org/blog/cross-chain-txdatahiding-crypto-heist/) by RANSOM ISAC.
 
 
 ### Evasion techniques and Juliette Clarke 
@@ -200,7 +200,7 @@ Also, if an untrained user is executing it, they may not understand what the scr
 4) ***Using Trusted hosting platforms to bypass Web Filtering***
 
 5) ***User agent detection to stop abuse teams investigating the initial payload sources***: 
-This is quite fun one, and very known behaviour if you have hunted phishing pages. This is a primary defense against online scanners such as Virustotal, if you scan the initial URL, it will return a benign response that is not going to be flagged. Furthermore, it is also a technique to bypass platforms that automate absuse verification, where if they are scanning the affected URL, their scanner may also fail to notice it. Unless, a human explicitly reads the report and pokes around the URL to confirm that it is indeed malicious.
+This is quite fun one, and very known behaviour if you have hunted phishing pages. This is a primary defense against online scanners such as Virustotal, if you scan the initial URL, it will return a benign response that is not going to be flagged. Furthermore, it is also a technique to bypass platforms that automate abuse verification, where if they are scanning the affected URL, their scanner may also fail to notice it. Unless, a human explicitly reads the report and pokes around the URL to confirm that it is indeed malicious.
 
 6) ***JWT Use***: This is a new technique I have not observed before. In this particular instance, the JWT is not protected by an algorithm; it is simply a base64-encoded payload with expiration time and a step count (not sure what that means). I was able to bypass this by running the payload in my sandbox environment and observing the entire behavior. I suspect this technique is also has the same reasons as using user agent detection.
 
@@ -218,12 +218,12 @@ I want to suggest the following approaches for detection and prevention:
 
 1) ***Developer awareness***:
 Please make sure your developers are aware that these threats exist. Trusting public repositories using Visual Studio Code is a really bad idea. 
-So always encourage them to inspect the code in ReadOnly mode, before trusting the workspace. Specially, the tasks.json file and language specific execution definitions (e.g. package.json files).
+So always encourage them to inspect the code in ReadOnly mode, before trusting the workspace. Especially, the tasks.json file and language specific execution definitions (e.g. package.json files).
 At the time of this writing Microsoft made changes to the Trust Workspace Dialog see the [GitHub issue](https://github.com/microsoft/vscode/issues/287073).
 
 2) ***Using CanaryTokens for Detection*** :
 This is my favorite method, if you do not have a large dedicated detection engineering team or SOC (even if you have one).
-CanaryTokens are best option for detecting intrustions, that involves credentials harvesting. Please take a look at [Thinkist Canary Tokens project](https://canarytokens.org/nest/) (It is free, also I am not affiliated with this vendor). For example, you can create AWS Keys as canary tokens and export it to your environment variables and patiently wait for them to trip on your wire!.
+CanaryTokens are best option for detecting intrusions, that involves credentials harvesting. Please take a look at [Thinkist Canary Tokens project](https://canarytokens.org/nest/) (It is free, also I am not affiliated with this vendor). For example, you can create AWS Keys as canary tokens and export it to your environment variables and patiently wait for them to trip on your wire!.
 
 3) ***Eliminate the usage of long-lived credentials***: I cannot stress this enough.
 Please do not create privileged long-lived credentials that gives access to your Cloud environment (e.g. AWS Access Keys) or GitHub PAT. Always use ephemeral credentials where possible. This gives attackers a small time window to act.
