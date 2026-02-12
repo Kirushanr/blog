@@ -1,9 +1,9 @@
 ---
-title: 'Famous Cholima and Dragon Sickness'
+title: 'Famous Chollima and Dragon Sickness'
 category: threat intelligence
 ---
 
-![Famous Cholima and Dragon Sickness Cover](https://user-images.githubusercontent.com/3458013/140440412-420cf2e9-8326-4298-b2d7-c1a6df2c101c.png)
+![Famous Chollima and Dragon Sickness Cover](https://user-images.githubusercontent.com/3458013/140440412-420cf2e9-8326-4298-b2d7-c1a6df2c101c.png)
 
 
 > There is nothing like looking, if you want to find something. You certainly usually find something, if you look, but it is not always quite the something you were after.
