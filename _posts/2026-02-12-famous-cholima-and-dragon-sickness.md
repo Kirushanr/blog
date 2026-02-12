@@ -122,10 +122,10 @@ As we saw earlier in the lifecycle
 
 4) Final payload executes on user device
 
-In step one attackers are using Trusted Hosting providers such as GitHub, Vercel, OnRender because
+In ***step one*** attackers are using Trusted Hosting providers such as GitHub, Vercel, OnRender because
 most organisations may choose to allowlist them in their networks to avoid the constant requests for change and to avoid the backlog of IT tickets filled with requests to allowlisting domains. In addition, most EDRs will not block these platforms for same reasons (Unless they are explictly flagged as malicious). Abuse of hosting platforms is not a new thing, it has been happening for a very long time. 
 
-Step 2-4 further payloads are fetched from remote resources, and POST requests are also made to attacker controlled infrastructure.
+***Step 2-4*** further payloads are fetched from remote resources, and POST requests are also made to attacker controlled infrastructure.
 Final goal of Step 4 exfilteration of credentials from the infected devices. 
 
 
