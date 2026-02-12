@@ -135,8 +135,11 @@ Based on my observations, I have classifed the final payloads into three categor
 They are : 
 
 1) Pure NodeJS exfiltration
+
 2) BeaverTail 
+
 3) Etherhiding 
+
 
 Which final payload drops is controlled by a parameter flag.
 This flag controls which final payload lands on the affected user's device.
