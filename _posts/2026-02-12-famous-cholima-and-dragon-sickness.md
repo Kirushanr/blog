@@ -103,9 +103,9 @@ As I am writing this, there are more than 200+ true positive findings has been f
 
 Also, note that the final step is manual, because human intervention is required to ensure that it is indeed malicious, this includes reading what the code does, testing the code in sandbox environment, then finally, coming up with a report. 
 
-```
+
 For anyone reading this I know some of this can be automated by an AI agent, but the important fact is, I will not be learning anything from it. This allowed me to learn a bit about how JavaScript obfuscation works, how these malicious payloads are evading detection and observing these payloads in a sandbox environment. Once we gain understanding of these fundamental behaviours, we can then feed that knowledge to AI (aka. Skill).
-```
+
 
 ## Analyzing and Reporting 
 
