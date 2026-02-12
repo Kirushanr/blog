@@ -61,7 +61,7 @@ DPRK is leveraging current global economic conditions to their advantage. This i
 ## GitHub & Me 
 
 
-On Tuesday, 27th January 2025, I read another article published on OpenSourceMalware blog titled "[Small Open-Source Maintainers Targeted by VS Code Tasks Malware](https://opensourcemalware.com/blog/oss-maintainters-vscode-tasks-compromised)".
+On Tuesday, 27th January 2026, I read another article published on OpenSourceMalware blog titled "[Small Open-Source Maintainers Targeted by VS Code Tasks Malware](https://opensourcemalware.com/blog/oss-maintainters-vscode-tasks-compromised)".
 After reading this, I thought I could look for these malicious patterns in GitHub. Then I remembered that couple of years back, GitHub did improve it's code [search](https://github.com/search), allowing you to use custom filters to search and identify certain code patterns. (Also very useful if you want to identify insecure code patterns across all public repositories, if you are into vulnerability research).
 
 So I started with a simple pattern that looks for code that is located in .vscode/tasks.json and has curl.
@@ -103,9 +103,9 @@ As I am writing this, there are more than 200+ true positive findings has been f
 
 Also, note that the final step is manual, because human intervention is required to ensure that it is indeed malicious, this includes reading what the code does, testing the code in sandbox environment, then finally, coming up with a report. 
 
-```
+
 For anyone reading this I know some of this can be automated by an AI agent, but the important fact is, I will not be learning anything from it. This allowed me to learn a bit about how JavaScript obfuscation works, how these malicious payloads are evading detection and observing these payloads in a sandbox environment. Once we gain understanding of these fundamental behaviours, we can then feed that knowledge to AI (aka. Skill).
-```
+
 
 ## Analyzing and Reporting 
 
@@ -114,15 +114,18 @@ For anyone reading this I know some of this can be automated by an AI agent, but
 
 As we saw earlier in the lifecycle
 
-1) Payload is fetched from a remote source (e.g. Trusted Hosting provider) ****
+1) Payload is fetched from a remote source (e.g. Trusted Hosting provider)
+
 2) Payload is then piped to bash or cmd (depends on the OS)
+
 3) Initial payload may make further calls to remote resources to fetch the final payload 
+
 4) Final payload executes on user device
 
-In step one attackers are using Trusted Hosting providers such as GitHub, Vercel, OnRender because
+In ***step one*** attackers are using Trusted Hosting providers such as GitHub, Vercel, OnRender because
 most organisations may choose to allowlist them in their networks to avoid the constant requests for change and to avoid the backlog of IT tickets filled with requests to allowlisting domains. In addition, most EDRs will not block these platforms for same reasons (Unless they are explictly flagged as malicious). Abuse of hosting platforms is not a new thing, it has been happening for a very long time. 
 
-Step 2-4 further payloads are fetched from remote resources, and POST requests are also made to attacker controlled infrastructure.
+***Step 2-4*** further payloads are fetched from remote resources, and POST requests are also made to attacker controlled infrastructure.
 Final goal of Step 4 exfilteration of credentials from the infected devices. 
 
 
@@ -132,8 +135,11 @@ Based on my observations, I have classifed the final payloads into three categor
 They are : 
 
 1) Pure NodeJS exfiltration
+
 2) BeaverTail 
+
 3) Etherhiding 
+
 
 Which final payload drops is controlled by a parameter flag.
 This flag controls which final payload lands on the affected user's device.
