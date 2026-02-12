@@ -226,7 +226,7 @@ This is my favorite method, if you do not have a large dedicated detection engin
 CanaryTokens are best option for detecting intrustions, that involves credentials harvesting. Please take a look at [Thinkist Canary Tokens project](https://canarytokens.org/nest/) (It is free, also I am not affiliated with this vendor). For example, you can create AWS Keys as canary tokens and export it to your environment variables and patiently wait for them to trip on your wire!.
 
 3) ***Eliminate the usage of long-lived credentials***: I cannot stress this enough.
-Please do not create privileged long-lived credentials in your Cloud (e.g. AWS Access Keys) or GitHub PAT. Always use ephemeral credentials where possible. This reduces the probability of attackers misusing your stolen credentials. 
+Please do not create privileged long-lived credentials in your Cloud (e.g. AWS Access Keys) or GitHub PAT. Always use ephemeral credentials where possible. This gives attackers a small time window to act.
 
 4) ***Monitor your environment for anomalies*** : Most stolen credentials especially cookies, secrets should trigger alerts when new sessions/actions are created or performed, if you have established a baseline behaviour of your environment. These alerts are biggest giveaway that someone in your organistion is compromised.
 Also, I want to highlight something here: users can access your organization's SaaS platforms on their personal devices, especially if BYOD is allowed (mostly startups fall into this category). If you are relying solely on corporate device detection techniques, you will struggle to detect these threats.
