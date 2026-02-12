@@ -114,9 +114,12 @@ For anyone reading this I know some of this can be automated by an AI agent, but
 
 As we saw earlier in the lifecycle
 
-1) Payload is fetched from a remote source (e.g. Trusted Hosting provider) ****
+1) Payload is fetched from a remote source (e.g. Trusted Hosting provider)
+
 2) Payload is then piped to bash or cmd (depends on the OS)
+
 3) Initial payload may make further calls to remote resources to fetch the final payload 
+
 4) Final payload executes on user device
 
 In step one attackers are using Trusted Hosting providers such as GitHub, Vercel, OnRender because
