@@ -61,7 +61,7 @@ DPRK is leveraging current global economic conditions to their advantage. This i
 ## GitHub & Me 
 
 
-On Tuesday, 27th January 2026, I read another article published on OpenSourceMalware blog titled "[Small Open-Source Maintainers Targeted by VS Code Tasks Malware](https://opensourcemalware.com/blog/oss-maintainters-vscode-tasks-compromised)".
+On Tuesday, 27th January 2026, I read another article published on OpenSourceMalware blog titled [ Small Open-Source Maintainers Targeted by VS Code Tasks Malware ](https://opensourcemalware.com/blog/oss-maintainters-vscode-tasks-compromised).
 After reading this, I thought I could look for these malicious patterns in GitHub. Then I remembered that couple of years back, GitHub did improve it's code [search](https://github.com/search), allowing you to use custom filters to search and identify certain code patterns. (Also very useful if you want to identify insecure code patterns across all public repositories, if you are into vulnerability research).
 
 So I started with a simple pattern that looks for code that is located in .vscode/tasks.json and has curl.
