@@ -35,7 +35,7 @@ The main motivation behind this appears to be targeting crypto-currency wallets,
 ## Contagious Interview & Visual Studio Code : A Better Love Story than Twilight
 
 The term contagious interview is coined by [Unit42 Research Team](https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/). 
-In the initial Contagious interview campaign highlights that the threat actors were posing as interviewers and directing people to install malicious NPM packages. But post [shai-hulud](https://unit42.paloaltonetworks.com/npm-supply-chain-attack/) we have lots of eyes on  NPM, other package ecosystem (Lots of vendors in this space), spreading malware via this method has less ROI (Return on Investment) compared to previous years because it can get reported or picked up by a commercial tool, that flags the installation or removed by the package managers.
+In the initial Contagious interview campaign highlights that the threat actors were posing as interviewers and directing people to install malicious NPM packages. But post [shai-hulud](https://unit42.paloaltonetworks.com/npm-supply-chain-attack/), we have lots of eyes on  NPM and other package ecosystem. So spreading malware via this method seem less ROI (Return on Investment) compared to previous years because it can get reported or picked up by a commercial tool, that flags the installation or removed by the package managers.
 
 But we imagine the following scenario where :
  Threat actors at a roundtable, and they are thinking "what can we do next ... ?", they understand the need to pivot. They may have read the Microsoft article published on May 2025 titled [Celebrating 50 Million Developers: The Journey of Visual Studio and Visual Studio Code](https://developer.microsoft.com/blog/celebrating-50-million-developers-the-journey-of-visual-studio-and-visual-studio-code). So the Chief at [Cholima](https://www.crowdstrike.com/adversaries/famous-chollima/) (an adversary associated with DPRK) suggests: "Let's target 50 million developers, shall we?" Kim approves! 
@@ -61,7 +61,7 @@ DPRK is leveraging current global economic conditions to their advantage. This i
 ## GitHub & Me 
 
 
-On Tuesday, 27th January 2025, I read another article published on OpenSourceMalware blog titled "[Small Open-Source Maintainers Targeted by VS Code Tasks Malware ]()".
+On Tuesday, 27th January 2025, I read another article published on OpenSourceMalware blog titled "[Small Open-Source Maintainers Targeted by VS Code Tasks Malware](https://opensourcemalware.com/blog/oss-maintainters-vscode-tasks-compromised)".
 After reading this, I thought I could look for these malicious patterns in GitHub. Then I remembered that couple of years back, GitHub did improve it's code [search](https://github.com/search), allowing you to use custom filters to search and identify certain code patterns. (Also very useful if you want to identify insecure code patterns across all public repositories, if you are into vulnerability research).
 
 So I started with a simple pattern that looks for code that is located in .vscode/tasks.json and has curl.
