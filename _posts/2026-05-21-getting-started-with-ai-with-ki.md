@@ -11,10 +11,10 @@ Getting your head around AI can be confusing, and keeping up with the changes is
 
 These resources helped and are still helping me understand the actual nuts and bolts behind these technologies and the jargon. In addition, they helped me differentiate between fluff and fact so that I can make grounded engineering decisions when building, using, and securing AI technology. I keep going back to these resources as needed (you can't remember all of this because there is way too much stuff to remember).
 
-```
-DISCLAIMER
+## DISCLAIMER
+
 I have referenced individuals and their work, I have no commercial or personal association with them.
-```
+
 
 ## Foundations of AI Engineering 
 
@@ -40,7 +40,8 @@ Support your local library, when you request a book you also support an author !
 ```
 
 ## AI Agents  
-<img width="825" height="413" alt="Krang from Teenage Mutant Ninja Turtles" src="https://gist.github.com/user-attachments/assets/e96f1a71-f965-464a-8280-7e4d27b33314" />
+
+![Krang as AI Agent]<img width="825" height="413" alt="Krang from Teenage Mutant Ninja Turtles" src="https://gist.github.com/user-attachments/assets/e96f1a71-f965-464a-8280-7e4d27b33314" />
 
 
 Now we have the foundational theoretical understanding of AI topics.
@@ -67,9 +68,9 @@ Guardrails = To prevent your agent from falling off the balcony
 
 2)[Agent Patterns](https://docs.cloud.google.com/architecture/choose-design-pattern-agentic-ai-system) (FREE) If you need a reference to different Agent architecture patterns this article from Google may come in handy.
 
-# Building your own agents 
+## Building your own agents 
 
-<img width="1612" height="1038" alt="Shows a scene Gilfoye's AI Deleted All Software from the TV Show, Silicon Valley" src="https://gist.github.com/user-attachments/assets/39444d94-6e65-4c87-84a7-f2cf621a1699" />
+![AI Agent Unleashed]<img width="1612" height="1038" alt="Shows a scene Gilfoye's AI Deleted All Software from the TV Show, Silicon Valley" src="https://gist.github.com/user-attachments/assets/39444d94-6e65-4c87-84a7-f2cf621a1699" />
 
 Now this is a part that gets trickier, there are lots of frameworks out their including not limited to 
 Crew AI, Pydantic AI, LangGraph, AWS Strands and the list grows on .... 
@@ -84,9 +85,9 @@ Anyways, I started using AWS Strands because I felt their documentation and gett
 4) [CrewAI](https://docs.crewai.com/en/quickstart) and [Building Multi Agent systems - Deeplearning.ai](https://learn.deeplearning.ai/courses/design-develop-and-deploy-multi-agent-systems-with-crewai/)
 
 
-# AI Evals 
+## AI Evals 
 
-<img width="1600" height="900" alt="This image is sourced from Hamel's blog, that shows XKCD's comic Machine Learning and the new AI version of that" src="https://gist.github.com/user-attachments/assets/d4669715-029e-40e7-bd30-82a57b06a6b9" />
+![Make no mistakes AI]<img width="1600" height="900" alt="This image is sourced from Hamel's blog, that shows XKCD's comic Machine Learning and the new AI version of that" src="https://gist.github.com/user-attachments/assets/d4669715-029e-40e7-bd30-82a57b06a6b9" />
 
 Now this is section i am yet to dive deeper, but I have understood the basics of what AI Eval is (this is also covered in Andrew Ng's course that I linked before). AI Evals is about evaluating the quality and accuracy of your AI Systems/Products. 
 
