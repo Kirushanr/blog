@@ -51,7 +51,7 @@ Agent   = Model + Harness
 
 Model   = Foundational models OR Open models  OR your own model
 
-Foundational models = Secret sauce big Forentier labs don't share, publicly how the models are made
+Foundational models = Secret sauce big Frontier labs don't share publicly how the models are made
 
 Open Models  = Think of them as how to make sauce as per your needs, you can tweak it 
 
@@ -90,7 +90,7 @@ Anyways, I started using AWS Strands because I felt their documentation and gett
 
 ## AI Evals 
 
-![Make no mistakes AI]<img width="1600" height="900" alt="This image is sourced from Hamel's blog, that shows XKCD's comic Machine Learning and the new AI version of that" src="https://gist.github.com/user-attachments/assets/d4669715-029e-40e7-bd30-82a57b06a6b9" />
+<img width="1600" height="900" alt="This image is sourced from Hamel's blog, that shows XKCD's comic Machine Learning and the new AI version of that" src="https://gist.github.com/user-attachments/assets/57166020-41b9-4ae2-bffb-1e70c72e5adb" />
 
 Now this is section i am yet to dive deeper, but I have understood the basics of what AI Eval is (this is also covered in Andrew Ng's course that I linked before). AI Evals is about evaluating the quality and accuracy of your AI Systems/Products. 
 
