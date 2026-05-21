@@ -11,9 +11,10 @@ Getting your head around AI can be confusing, and keeping up with the changes is
 
 These resources helped and are still helping me understand the actual nuts and bolts behind these technologies and the jargon. In addition, they helped me differentiate between fluff and fact so that I can make grounded engineering decisions when building, using, and securing AI technology. I keep going back to these resources as needed (you can't remember all of this because there is way too much stuff to remember).
 
-## DISCLAIMER
 
-I have referenced individuals and their work, I have no commercial or personal association with them.
+
+
+*** I have referenced individuals and their work, I have no commercial or personal association with them.
 
 
 ## Foundations of AI Engineering 
@@ -72,7 +73,7 @@ Guardrails = To prevent your agent from falling off the balcony
 
 <img width="1612" height="1038" alt="Shows a scene Gilfoye's AI Deleted All Software from the TV Show, Silicon Valley" src="https://gist.github.com/user-attachments/assets/39444d94-6e65-4c87-84a7-f2cf621a1699" />
 
-Now this is a part that gets trickier, there are lots of frameworks out their including not limited to 
+Now this is a part that gets trickier, there are lots of frameworks out there including not limited to 
 Crew AI, Pydantic AI, LangGraph, AWS Strands and the list grows on .... 
 
 All frameworks have their own strength and weaknesses but they rely on the same fundamental principles and patterns I referenced in the previous sections. 
