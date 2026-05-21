@@ -41,7 +41,7 @@ Support your local library, when you request a book you also support an author !
 
 ## AI Agents  
 
-![Krang as AI Agent]<img width="825" height="413" alt="Krang from Teenage Mutant Ninja Turtles" src="https://gist.github.com/user-attachments/assets/e96f1a71-f965-464a-8280-7e4d27b33314" />
+<img width="825" height="413" alt="Krang from Teenage Mutant Ninja Turtles" src="https://gist.github.com/user-attachments/assets/e96f1a71-f965-464a-8280-7e4d27b33314" />
 
 
 Now we have the foundational theoretical understanding of AI topics.
@@ -70,7 +70,7 @@ Guardrails = To prevent your agent from falling off the balcony
 
 ## Building your own agents 
 
-![AI Agent Unleashed]<img width="1612" height="1038" alt="Shows a scene Gilfoye's AI Deleted All Software from the TV Show, Silicon Valley" src="https://gist.github.com/user-attachments/assets/39444d94-6e65-4c87-84a7-f2cf621a1699" />
+<img width="1612" height="1038" alt="Shows a scene Gilfoye's AI Deleted All Software from the TV Show, Silicon Valley" src="https://gist.github.com/user-attachments/assets/39444d94-6e65-4c87-84a7-f2cf621a1699" />
 
 Now this is a part that gets trickier, there are lots of frameworks out their including not limited to 
 Crew AI, Pydantic AI, LangGraph, AWS Strands and the list grows on .... 
@@ -80,8 +80,11 @@ All frameworks have their own strength and weaknesses but they rely on the same 
 Anyways, I started using AWS Strands because I felt their documentation and getting to started guide is easier to setup . I used Anthropic as my model provider instead of Amazon Bedrock. I have linked to all getting started and free training that is available for all the frameworks I have listed above.
 
 1) [AWS Strands](https://strandsagents.com/docs/user-guide/quickstart/overview/)
+
 2) [LangGraph Training](https://academy.langchain.com/courses/intro-to-langgraph) and [LangGraph Documentation](https://docs.langchain.com/oss/python/langgraph/quickstart)
-3) [Pydantic AI](https://pydantic.dev/docs/ai/overview/) 
+
+3) [Pydantic AI](https://pydantic.dev/docs/ai/overview/)
+
 4) [CrewAI](https://docs.crewai.com/en/quickstart) and [Building Multi Agent systems - Deeplearning.ai](https://learn.deeplearning.ai/courses/design-develop-and-deploy-multi-agent-systems-with-crewai/)
 
 
